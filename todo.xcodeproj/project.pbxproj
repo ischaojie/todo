@@ -14,6 +14,10 @@
 		778B6D9F278C69B50050B731 /* todoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6D9E278C69B50050B731 /* todoTests.swift */; };
 		778B6DA9278C69B50050B731 /* todoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DA8278C69B50050B731 /* todoUITests.swift */; };
 		778B6DAB278C69B50050B731 /* todoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DAA278C69B50050B731 /* todoUITestsLaunchTests.swift */; };
+		778B6DB9278C69EB0050B731 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DB8278C69EB0050B731 /* TasksView.swift */; };
+		778B6DBC278C6BDF0050B731 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DBB278C6BDF0050B731 /* TaskRow.swift */; };
+		778B6DBE278C6DAF0050B731 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DBD278C6DAF0050B731 /* AddTaskView.swift */; };
+		778B6DC0278C72AE0050B731 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DBF278C72AE0050B731 /* SmallAddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		778B6DA4278C69B50050B731 /* todoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778B6DA8278C69B50050B731 /* todoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoUITests.swift; sourceTree = "<group>"; };
 		778B6DAA278C69B50050B731 /* todoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		778B6DB8278C69EB0050B731 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		778B6DBB278C6BDF0050B731 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		778B6DBD278C6DAF0050B731 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		778B6DBF278C72AE0050B731 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		778B6D8C278C69B40050B731 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				778B6DBA278C6BC70050B731 /* Components */,
+				778B6DB7278C69CA0050B731 /* Views */,
 				778B6D8D278C69B40050B731 /* todoApp.swift */,
-				778B6D8F278C69B40050B731 /* ContentView.swift */,
 				778B6D91278C69B50050B731 /* Assets.xcassets */,
 				778B6D93278C69B50050B731 /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				778B6DAA278C69B50050B731 /* todoUITestsLaunchTests.swift */,
 			);
 			path = todoUITests;
+			sourceTree = "<group>";
+		};
+		778B6DB7278C69CA0050B731 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				778B6D8F278C69B40050B731 /* ContentView.swift */,
+				778B6DB8278C69EB0050B731 /* TasksView.swift */,
+				778B6DBD278C6DAF0050B731 /* AddTaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		778B6DBA278C6BC70050B731 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				778B6DBB278C6BDF0050B731 /* TaskRow.swift */,
+				778B6DBF278C72AE0050B731 /* SmallAddButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				778B6D90278C69B40050B731 /* ContentView.swift in Sources */,
+				778B6DBE278C6DAF0050B731 /* AddTaskView.swift in Sources */,
+				778B6DB9278C69EB0050B731 /* TasksView.swift in Sources */,
+				778B6DC0278C72AE0050B731 /* SmallAddButton.swift in Sources */,
 				778B6D8E278C69B40050B731 /* todoApp.swift in Sources */,
+				778B6DBC278C6BDF0050B731 /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
