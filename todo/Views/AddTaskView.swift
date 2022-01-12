@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AddTaskView: View {
     @State private var title: String = ""
+    // ios 15新增
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -21,6 +23,7 @@ struct AddTaskView: View {
             
             Button{
                 print("Task Added!")
+                dismiss()
             } label: {
                 Text("添加任务")
                     .foregroundColor(.white)

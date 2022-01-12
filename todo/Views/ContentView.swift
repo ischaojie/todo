@@ -16,8 +16,10 @@ struct ContentView: View {
             
             SmallAddButton()
                 .padding()
+                // 按钮触发 action：tap
                 .onTapGesture {
                     // 触发
+                    // Boolean 类型可以通过 toggle 来切换 true or false
                     showAddTaskView.toggle()
                 }
         }
