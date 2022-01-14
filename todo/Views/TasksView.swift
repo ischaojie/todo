@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TasksView: View {
     @EnvironmentObject var realmManager: RealmManager
+    
     var body: some View {
         VStack {
             Text("我的任务")
@@ -21,10 +22,13 @@ struct TasksView: View {
                     task in
                     if !task.isInvalidated {
                         TaskRow(task: task.title, completed: task.completed)
+                            // 点击 task 切换 complete
                             .onTapGesture {
                                 realmManager.updateTask(id: task.id, completed: !task.completed)
                             }
+                            // 滑动的操作
                             .swipeActions(edge: .trailing) {
+                                // 添加删除按钮
                                 Button(role: .destructive) {
                                     realmManager.deleteTask(id: task.id)
                                 }label: {
@@ -34,6 +38,7 @@ struct TasksView: View {
                     }
                     
                 }.listRowSeparator(.hidden)
+            // 去除背景
             }.onAppear{
                 UITableView.appearance().backgroundColor = UIColor.clear
                 UITableViewCell.appearance().backgroundColor = UIColor.clear

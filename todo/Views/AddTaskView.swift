@@ -10,7 +10,7 @@ import SwiftUI
 struct AddTaskView: View {
     @EnvironmentObject var realmManager: RealmManager
     @State private var title: String = ""
-    // ios 15新增
+    // ios 15 新增
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
