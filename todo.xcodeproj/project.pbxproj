@@ -22,6 +22,7 @@
 		778B6DBC278C6BDF0050B731 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DBB278C6BDF0050B731 /* TaskRow.swift */; };
 		778B6DBE278C6DAF0050B731 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DBD278C6DAF0050B731 /* AddTaskView.swift */; };
 		778B6DC0278C72AE0050B731 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6DBF278C72AE0050B731 /* SmallAddButton.swift */; };
+		77DC8DA1279453DF003A34E4 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DC8DA0279453DF003A34E4 /* InboxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		778B6DBB278C6BDF0050B731 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		778B6DBD278C6DAF0050B731 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		778B6DBF278C72AE0050B731 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
+		77DC8DA0279453DF003A34E4 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				778B6D8F278C69B40050B731 /* ContentView.swift */,
 				778B6DB8278C69EB0050B731 /* TasksView.swift */,
 				778B6DBD278C6DAF0050B731 /* AddTaskView.swift */,
+				77DC8DA0279453DF003A34E4 /* InboxView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				778B6DC0278C72AE0050B731 /* SmallAddButton.swift in Sources */,
 				778B6D8E278C69B40050B731 /* todoApp.swift in Sources */,
 				7719A0E3279047CB00325B60 /* RealmManager.swift in Sources */,
+				77DC8DA1279453DF003A34E4 /* InboxView.swift in Sources */,
 				778B6DBC278C6BDF0050B731 /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
